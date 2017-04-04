@@ -1,3 +1,47 @@
+/*--------------------------------------------------------------------------
+	Typography Style
+--------------------------------------------------------------------------*/
+body {
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #535b60;
+}
+h1 {
+	color: #53555c;
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
+}
+h2 {
+	color: #53555c;
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	line-height: 1.5em;
+	margin: 30px 0 0 0;
+}
+h3 {
+	font-family: 'Lato', sans-serif;
+	color: #53555c;
+	font-size: 1.5em;
+}
+h4 {
+	font-family: 'Lato', sans-serif;
+	color: #53555c;
+	margin-bottom: 10px;
+}
+a {
+	color: #44aa00;
+	outline: 0;
+}
+a:hover {
+	color: #7ace42;
+	text-decoration:none;
+	outline: 0;
+}
+
+
+
+
 .navbar-default {
     background-color: #FFF;
     border-color: #CCC;
@@ -35,11 +79,54 @@
 .navbar-inverse .navbar-nav li a {
 	color: #000;
 }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+	background-color: #44aa00;
+    color: #fff;
+}
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: #44aa00;
     color: #fff;
 }
+
+
+.slider-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(34, 76, 6, 0.45);
+	z-index: 1;
+}
+
+.slider-text h2 {
+	font-size: 72px;
+	color:#FFF;
+	font-weight: bold;
+	padding-left:0;
+	margin: 0px;
+	text-transform: uppercase;
+}
+
+.slider-text p {
+	font-size: 20px;
+	color: #7ace42;
+	margin: 0px;
+	font-weight: normal;
+	text-transform:uppercase;
+}
+
+.slider-text #slider-description {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 400;
+	text-transform: none;
+}
+
 
 #main-slider {
   position: relative;
@@ -176,6 +263,15 @@
 	  font-weight:700;
 	  padding-left:0;
 	}
+
+	.slider-text h2 {
+		font-size: 42px;
+		color:#FFF;
+		font-weight: bold;
+		padding-left:0;
+		margin: 0px;
+		text-transform: uppercase;
+	}
 }
 
 
@@ -249,7 +345,8 @@
 	left: 0;
 	padding: 20px;
 	background: #000;
-	color: #ed4e6e;
+	/*color: #ed4e6e;*/
+	color: #44aa00;
 }
 
 .grid figcaption h3 {
@@ -265,7 +362,8 @@
 	padding: 5px 10px;
 	border-radius: 0;
 	display: inline-block;
-	background: #ed4e6e;
+	/*background: #ed4e6e;*/
+	background: #44aa00;
 	color: #fff;
 }
 
@@ -462,4 +560,71 @@
 }
 .dropdown.open a.dropdown-toggle .caret {
 	border-top: 4px solid #FFF;
+}
+
+
+/*--------------------------------------------------------------------------
+	Footer Style
+--------------------------------------------------------------------------*/
+.footer {
+  background: #222;
+  color: #A0A0A0;
+  padding: 0 20px 10px 20px;
+  border-top: 4px solid #7ace42;
+  margin-top: 20px;
+  -webkit-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  box-shadow: 0 -1px 12px rgba(0,0,0,0.4);
+  color: 0 -1px 12px rgba(0,0,0,0.4);
+}
+.footer h3 {
+  color: #E4E4E4;
+  font-size: 1.3em;
+  border-bottom: 1px dotted #7C7C7C;
+}
+.footer ul {
+  padding: 0;
+}
+.footer-navigate-section li {
+  line-height: 20px !important;
+}
+.footer-stay-connected a {
+  text-align: left;
+  text-indent: -9999px;
+  display: block;
+  width: 115px;
+  height: 40px;
+  background: url(../img/stay-connected.png);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+  -o-transition: opacity .25s linear;
+  -ms-transition: opacity .25s linear;
+  transition: opacity .25s linear;
+}
+.footer-stay-connected a:hover {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.footer-stay-connected a.facebook {
+  background-position: -115px 0;
+}
+.footer-stay-connected a.twitter {
+  background-position: -230px 0;
+}
+.footer-stay-connected a.googleplus {
+  background-position: 0 0;
+}
+.footer-stay-connected li {
+  text-align: center;
+}
+.footer-copyright {
+  text-align: center;
+  color: #7C7C7C;
+  border-top: 1px dotted #7C7C7C;
+  padding-top: 10px;
+  font-size: 0.9em;
 }
